@@ -1,0 +1,24 @@
+QUERY :
+----------------------------------------------------
+		EVEN OR ODD
+-----------------------------------------------------
+PL/SQL BLOCK :
+
+declare
+	 a int;
+begin
+	a:=&a;
+	if mod(a,2)=0 then
+		dbms_output.put_line(a||' is an even number');
+      else
+		dbms_output.put_line(a||' is an odd number');
+	end if;
+end;
+/
+
+OUTPUT :
+-----------------------------------------------------------------------
+Enter value for a: 5
+old   4:        a:=&a;
+new   4:        a:=5;
+5 is an odd number
